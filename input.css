@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "poppins";
+  src: url("./public/fonts/Poppins-Medium.ttf"),
+    url("./public/fonts/Poppins-Regular.ttf"),
+    url("./public/fonts/Poppins-SemiBold.ttf"),
+    url("./public/fonts/Poppins-Bold.ttf"),
+    url("./public/fonts/Poppins-ExtraBold.ttf"),
+    url("./public/fonts/Poppins-Black.ttf");
+  font-weight: 500;
+}
+
+body {
+  font-family: "poppins" !important;
+}
+
+.project-card-img img {
+  transition: all 0.4s;
+  opacity: 0.9;
+}
+.project-card-img:hover img {
+  transform: scale(1.1) translateY(-25px);
+  opacity: 1;
+}
